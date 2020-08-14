@@ -16,12 +16,12 @@ public class ChocolateController {
         return new ResponseEntity<>(ChocolateDto.builder().build(), HttpStatus.OK);
     }
     @PostMapping
-    public ResponseEntity handlePost( @RequestBody ChocolateDto chocolateDto){
+    public ResponseEntity saveNewChocolate( @RequestBody ChocolateDto chocolateDto){
         return new ResponseEntity(HttpStatus.CREATED);
     }
 
     @PutMapping("/{chocolateId}")
-    public ResponseEntity handleUpdate(@PathVariable("chocolateId") UUID chocolateId, @RequestBody ChocolateDto chocolateDto){
+    public ResponseEntity updateChocolateById(@PathVariable("chocolateId") UUID chocolateId, @RequestBody ChocolateDto chocolateDto){
         return new ResponseEntity(HttpStatus.NO_CONTENT);
     }
 
