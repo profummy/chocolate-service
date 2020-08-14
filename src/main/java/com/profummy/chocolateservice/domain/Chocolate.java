@@ -21,7 +21,7 @@ public class Chocolate {
 
     @Id
     @GeneratedValue(generator = "UUID")
-    @GenericGenerator(name = "UUID", strategy ="org.hibernate.ud.UUIDGenerator")
+    @GenericGenerator(name = "UUID", strategy ="org.hibernate.id.UUIDGenerator")
     @Column(length = 36,columnDefinition = "varchar",updatable = false,nullable = false)
     private UUID id;
 
@@ -43,6 +43,6 @@ public class Chocolate {
     private BigDecimal price;
 
     private Integer minOnHand;
-    private Integer quantityToBrew;
+    private Integer quantityToMake;
 
 }
