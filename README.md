@@ -1,1 +1,3 @@
-# chocolate-service
+# Chocolate Service
+
+Spring Boot Microservice example
