@@ -22,19 +22,29 @@ public class ChocolateDto {
 //@Null Read only properties on client side
     @Null
     private UUID id;
+
     @Null
     private Integer version;
+
     @Null
     private OffsetDateTime createdDate;
+
     @Null
     private OffsetDateTime lastModifiedDate;
+
     @NotBlank
     private String chocolateName;
+
     @NotNull
     private String chocolateType;
-    @Positive @NotNull
+
+    @Positive
+    @NotNull
     private Long barcode;
-    @Positive @NotNull
+
+    @Positive
+    @NotNull
     private BigDecimal price;
+
     private Integer quantityOnHand;
 }

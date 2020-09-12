@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.*;
 import javax.validation.Valid;
 import java.util.UUID;
 
-@Deprecated
 @RequestMapping("/api/v1/chocolate")
 @RestController
 public class ChocolateController {
@@ -27,7 +26,7 @@ public class ChocolateController {
     }
 
     @PostMapping
-    public ResponseEntity handlePost(@Valid @RequestBody ChocolateDto chocolateDto) {
+    public ResponseEntity saveNewChocolate(@Valid @RequestBody ChocolateDto chocolateDto) {
 
         ChocolateDto savedDto = chocolateService.saveNewChocolate(chocolateDto);
         HttpHeaders headers = new HttpHeaders();
@@ -37,7 +36,7 @@ public class ChocolateController {
     }
 
     @PutMapping({"/{chocolateId}"})
-    public ResponseEntity handleUpdate(@PathVariable("chocolateId") UUID chocolateId, @Valid @RequestBody ChocolateDto chocolateDto) {
+    public ResponseEntity updateChocolateById(@PathVariable("chocolateId") UUID chocolateId, @Valid @RequestBody ChocolateDto chocolateDto) {
         chocolateService.updateChocolate(chocolateId, chocolateDto);
         return new ResponseEntity(HttpStatus.NO_CONTENT);
     }
