@@ -2,7 +2,7 @@ package com.profummy.chocolateservice.bootstrap;
 
 import com.profummy.chocolateservice.domain.Chocolate;
 import com.profummy.chocolateservice.repositories.ChocolateRepository;
-import com.profummy.chocolateservice.web.model.ChocolateTypeEnum;
+import com.profummy.chocolateservice.web.model.V2.ChocolateTypeEnum;
 import lombok.RequiredArgsConstructor;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;

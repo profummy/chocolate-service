@@ -1,7 +1,7 @@
 package com.profummy.chocolateservice.repositories;
 
 import com.profummy.chocolateservice.domain.Chocolate;
-import com.profummy.chocolateservice.web.model.ChocolateTypeEnum;
+import com.profummy.chocolateservice.web.model.V2.ChocolateTypeEnum;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
