@@ -1,0 +1,6 @@
+[source,http,options="nowrap"]
+----
+HTTP/1.1 201 Created
+Location: /api/v1/chocolate/a983a09a-20e1-46d7-bf3b-1b055ceef86c
+
+----

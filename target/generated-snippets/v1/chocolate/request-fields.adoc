@@ -1,0 +1,20 @@
+|===
+|Path|Type|Description
+
+|`+chocolateName+`
+|`+String+`
+|Name of chocolate
+
+|`+chocolateType+`
+|`+String+`
+|Type of chocolate
+
+|`+barcode+`
+|`+Number+`
+|Barcode of chocolate
+
+|`+price+`
+|`+Number+`
+|Price of chocolate
+
+|===
